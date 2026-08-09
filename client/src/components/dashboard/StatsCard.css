@@ -1,0 +1,178 @@
+.stats-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 25px;
+
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.95),
+            rgba(239, 248, 244, 0.9)
+        );
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, 0.7);
+
+    box-shadow:
+        0 15px 35px rgba(80, 50, 70, 0.08);
+
+    transition: 0.3s ease;
+}
+
+
+/* Hover */
+
+.stats-card:hover {
+    box-shadow:
+        0 20px 45px rgba(127, 64, 88, 0.14);
+}
+
+
+/* Icon */
+
+.stats-icon {
+    width: 55px;
+    height: 55px;
+
+    min-width: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9fd3b2,
+            #a9657d
+        );
+
+    color: white;
+
+    font-size: 24px;
+
+    box-shadow:
+        0 8px 18px rgba(127, 64, 88, 0.12);
+}
+
+
+/* Information */
+
+.stats-info {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+
+/* Title */
+
+.stats-title {
+    margin: 0;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #6b7280;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* Main value */
+
+.stats-value {
+    margin: 5px 0 0;
+
+    font-size: 30px;
+
+    font-weight: 700;
+
+    color: #7f4058;
+
+    line-height: 1.15;
+}
+
+
+/* Small detail */
+
+.stats-detail {
+    margin-top: 7px;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: #789283;
+
+    line-height: 1.4;
+}
+
+
+/* Dark Mode */
+
+.dashboard-container.dark .stats-card {
+    background:
+        linear-gradient(
+            135deg,
+            #26353a,
+            #3a3038
+        );
+
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+
+.dashboard-container.dark .stats-title {
+    color: #cbd5d0;
+}
+
+
+.dashboard-container.dark .stats-value {
+    color: #f5dce5;
+}
+
+
+.dashboard-container.dark .stats-detail {
+    color: #a9cdb5;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .stats-card {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .stats-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+
+        border-radius: 15px;
+
+        font-size: 21px;
+    }
+
+    .stats-value {
+        font-size: 26px;
+    }
+
+    .stats-detail {
+        font-size: 11px;
+        margin-top: 6px;
+    }
+
+}

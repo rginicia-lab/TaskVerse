@@ -1,0 +1,387 @@
+.task-card {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s ease;
+
+    border: 1px solid #e2e8f0;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Hover */
+
+.task-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Completed Card */
+
+.task-card.completed {
+
+    opacity: 0.75;
+
+    border-left: 6px solid #22c55e;
+}
+
+
+/* Task Title */
+
+.task-card h3 {
+
+    font-size: 22px;
+
+    color: #1e293b;
+
+    margin-bottom: 10px;
+}
+
+
+/* Task Description */
+
+.task-card p {
+
+    color: #64748b;
+
+    line-height: 1.5;
+}
+
+
+/* Priority Badge */
+
+.priority {
+
+    display: inline-block;
+
+    padding: 6px 14px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin: 10px 0;
+}
+
+
+.priority.High {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+}
+
+
+.priority.Medium {
+
+    background: #fef3c7;
+
+    color: #d97706;
+}
+
+
+.priority.Low {
+
+    background: #dcfce7;
+
+    color: #16a34a;
+}
+
+
+/* Buttons */
+
+.task-buttons {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.task-buttons button {
+
+    padding: 10px 16px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    background: #2563eb;
+
+    color: white;
+
+    transition: 0.3s ease;
+}
+
+
+.task-buttons button:hover {
+
+    transform: translateY(-2px);
+
+    opacity: 0.9;
+}
+
+
+.task-buttons button:disabled {
+
+    background: #22c55e;
+
+    cursor: not-allowed;
+}
+
+
+/* Delete Button */
+
+.delete-btn {
+
+    background: #ef4444 !important;
+}
+
+
+/* ============================= */
+/* Save Button */
+/* ============================= */
+
+.task-card .save-btn {
+
+    background: linear-gradient(
+        135deg,
+        #8f526b,
+        #a9cdb5
+    );
+
+    color: white;
+
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 6px 15px rgba(127, 64, 88, 0.16);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.task-card .save-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 9px 20px rgba(127, 64, 88, 0.22);
+
+    opacity: 1;
+}
+
+
+.task-card .save-btn:active {
+
+    transform: translateY(0);
+}
+
+
+/* ============================= */
+/* Edit Mode */
+/* ============================= */
+
+.task-card input,
+.task-card textarea,
+.task-card select {
+
+    width: 100%;
+
+    padding: 12px 15px;
+
+    margin-bottom: 12px;
+
+    border-radius: 14px;
+
+    border: 1px solid #cbd5e1;
+
+    outline: none;
+
+    font-size: 15px;
+
+    box-sizing: border-box;
+
+    transition: 0.25s ease;
+}
+
+
+.task-card textarea {
+
+    min-height: 100px;
+
+    resize: none;
+}
+
+
+.task-card input:focus,
+.task-card textarea:focus,
+.task-card select:focus {
+
+    border-color: #a9cdb5;
+
+    box-shadow:
+        0 0 0 3px rgba(169, 205, 181, 0.18);
+}
+
+
+/* ============================= */
+/* Dark Mode */
+/* ============================= */
+
+.dashboard-container.dark .task-card {
+
+    background: #1e293b;
+
+    border-color: #334155;
+}
+
+
+.dashboard-container.dark .task-card h3 {
+
+    color: white;
+}
+
+
+.dashboard-container.dark .task-card p {
+
+    color: #cbd5e1;
+}
+
+
+.dashboard-container.dark .task-card input,
+.dashboard-container.dark .task-card textarea,
+.dashboard-container.dark .task-card select {
+
+    background: #334155;
+
+    color: white;
+
+    border-color: #475569;
+}
+
+
+.dashboard-container.dark .task-card input:focus,
+.dashboard-container.dark .task-card textarea:focus,
+.dashboard-container.dark .task-card select:focus {
+
+    border-color: #a9cdb5;
+
+    box-shadow:
+        0 0 0 3px rgba(169, 205, 181, 0.15);
+}
+
+
+/* ============================= */
+/* Mobile */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    .task-card {
+
+        padding: 18px;
+    }
+
+
+    .task-buttons {
+
+        flex-direction: column;
+    }
+
+
+    .task-buttons button {
+
+        width: 100%;
+    }
+
+
+    .task-card .save-btn {
+
+        width: 100%;
+
+        padding: 12px;
+    }
+
+}
+/* Edit Mode - Save Button */
+
+.task-card .save-btn {
+    background: #7dd3fc !important;
+    color: #0f172a !important;
+
+    padding: 10px 22px !important;
+
+    border: none !important;
+    border-radius: 12px !important;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 14px rgba(56, 189, 248, 0.18);
+
+    transition: 0.25s ease;
+}
+
+.task-card .save-btn:hover {
+    background: #38bdf8 !important;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 18px rgba(56, 189, 248, 0.25);
+
+    opacity: 1;
+}
+
+.task-card .save-btn:active {
+    transform: translateY(0);
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .task-card .save-btn {
+        width: 100% !important;
+    }
+
+}

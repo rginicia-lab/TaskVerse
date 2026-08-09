@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+.dark-mode{
+
+background:#121212;
+
+color:white;
+
+min-height:100vh;
+
+}
+
+
+.dark-mode .dashboard-content,
+.dark-mode .settings-card,
+.dark-mode .task-card,
+.dark-mode .chart-card{
+
+background:#1e1e1e;
+
+color:white;
+
+}
+
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select{
+
+background:#333;
+
+color:white;
+
+}

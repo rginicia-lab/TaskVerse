@@ -1,0 +1,146 @@
+.add-task-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(80, 50, 70, 0.08);
+    margin: 25px 0;
+}
+
+
+/* Heading */
+
+.add-task-container h2 {
+    color: #7f4058;
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+
+
+/* Form */
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* Inputs */
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background: #f3f7f4;
+    font-size: 16px;
+    font-family: inherit;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+
+/* Textarea */
+
+.task-form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+
+/* Date + Reminder Labels */
+
+.task-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    color: #68495a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* Date / Reminder inputs */
+
+.task-form label input {
+    width: 100%;
+    margin: 0;
+}
+
+
+/* Focus */
+
+.task-form input:focus,
+.task-form textarea:focus,
+.task-form select:focus {
+    outline: none;
+    background: #ffffff;
+    border: 2px solid #9fc9ad;
+    box-shadow: 0 0 12px rgba(159, 201, 173, 0.25);
+}
+
+
+/* Button */
+
+.task-form button {
+    background: linear-gradient(
+        90deg,
+        #8f526b,
+        #a9cdb5
+    );
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 4px;
+}
+
+
+/* Button Hover */
+
+.task-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(127, 64, 88, 0.22);
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .add-task-container {
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 16px;
+    }
+
+    .add-task-container h2 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .task-form {
+        gap: 16px;
+    }
+
+    .task-form input,
+    .task-form textarea,
+    .task-form select {
+        padding: 13px;
+        font-size: 15px;
+    }
+
+    .task-form label {
+        gap: 8px;
+    }
+
+    .task-form button {
+        padding: 14px;
+        font-size: 16px;
+    }
+}

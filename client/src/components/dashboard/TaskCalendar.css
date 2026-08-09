@@ -1,0 +1,209 @@
+.calendar-card {
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 24px;
+
+  margin-top: 30px;
+
+  box-shadow:
+  0 15px 35px rgba(0,0,0,0.08);
+
+}
+
+
+
+.calendar-card h2 {
+
+  font-size: 24px;
+
+  margin-bottom: 25px;
+
+  color:#1e293b;
+
+}
+
+
+
+/* Calendar container */
+
+.react-calendar {
+
+  width:100%;
+
+  border:none;
+
+  background:white;
+
+  font-family:inherit;
+
+}
+
+
+
+/* Navigation */
+
+.react-calendar__navigation {
+
+  display:flex;
+
+  justify-content:space-between;
+
+  margin-bottom:20px;
+
+}
+
+
+
+.react-calendar__navigation button {
+
+  background:#6366f1;
+
+  color:white;
+
+  border:none;
+
+  border-radius:12px;
+
+  padding:10px 15px;
+
+  font-weight:600;
+
+  cursor:pointer;
+
+}
+
+
+
+.react-calendar__navigation button:hover {
+
+  background:#4f46e5;
+
+}
+
+
+
+/* Week days */
+
+.react-calendar__month-view__weekdays {
+
+  text-align:center;
+
+  font-weight:700;
+
+  color:#64748b;
+
+}
+
+
+
+/* Dates */
+
+.react-calendar__tile {
+
+  padding:14px 8px;
+
+  border-radius:12px;
+
+  border:none;
+
+  background:white;
+
+  font-weight:600;
+
+  transition:0.3s;
+
+}
+
+
+
+.react-calendar__tile:hover {
+
+  background:#eef2ff;
+
+}
+
+
+
+/* Today */
+
+.react-calendar__tile--now {
+
+  background:#fef3c7;
+
+  color:#92400e;
+
+}
+
+
+
+/* Selected date */
+
+.react-calendar__tile--active {
+
+  background:#6366f1 !important;
+
+  color:white;
+
+}
+
+
+
+/* Task list */
+
+
+.calendar-tasks {
+
+  margin-top:30px;
+
+}
+
+
+
+.calendar-tasks h3 {
+
+  color:#334155;
+
+  margin-bottom:15px;
+
+}
+
+
+
+.calendar-task {
+
+  background:#eef2ff;
+
+  color:#4338ca;
+
+  padding:14px;
+
+  border-radius:14px;
+
+  margin-bottom:12px;
+
+  font-weight:600;
+
+  border-left:5px solid #6366f1;
+
+}
+@media(max-width:768px){
+
+.calendar-card{
+
+padding:20px;
+
+}
+
+
+.react-calendar__tile{
+
+padding:10px 5px;
+
+font-size:13px;
+
+}
+
+}

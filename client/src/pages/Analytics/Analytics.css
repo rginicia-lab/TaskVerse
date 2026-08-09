@@ -1,0 +1,866 @@
+/* =========================================
+   ANALYTICS PAGE
+========================================= */
+
+.analytics-page {
+
+    min-height: 100vh;
+
+    padding: 35px;
+
+    background: #ffffff;
+
+    transition: 0.3s ease;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.analytics-header {
+
+    margin-bottom: 35px;
+
+}
+
+
+.analytics-header h1 {
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+    color: #5a3547;
+
+    margin-bottom: 8px;
+
+}
+
+
+.analytics-header p {
+
+    color: #927889;
+
+    font-size: 16px;
+
+}
+
+
+/* =========================================
+   TOP STAT CARDS
+========================================= */
+
+.analytics-stats {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+}
+
+
+.analytics-stat-card {
+
+    background: #fffafa;
+
+    padding: 25px;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border: 1px solid #f3e5eb;
+
+    box-shadow:
+        0 12px 30px rgba(120, 80, 100, 0.08);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.analytics-stat-card:hover {
+
+    box-shadow:
+        0 18px 40px
+        rgba(120, 80, 100, 0.14);
+
+}
+
+
+.stat-icon {
+
+    height: 58px;
+
+    width: 58px;
+
+    min-width: 58px;
+
+    border-radius: 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 25px;
+
+}
+
+
+.stat-icon svg {
+
+    width: 25px;
+
+    height: 25px;
+
+}
+
+
+/* Different pastel icons */
+
+.analytics-stat-card:nth-child(1)
+.stat-icon {
+
+    background: #e8f5e9;
+
+    color: #5b9464;
+
+}
+
+
+.analytics-stat-card:nth-child(2)
+.stat-icon {
+
+    background: #fde8f1;
+
+    color: #c45b83;
+
+}
+
+
+.analytics-stat-card:nth-child(3)
+.stat-icon {
+
+    background: #eee8ff;
+
+    color: #8064c9;
+
+}
+
+
+.analytics-stat-card:nth-child(4)
+.stat-icon {
+
+    background: #f8e5eb;
+
+    color: #9b4963;
+
+}
+
+
+.analytics-stat-card h2 {
+
+    margin: 0;
+
+    color: #5a3547;
+
+    font-size: 28px;
+
+}
+
+
+.analytics-stat-card p {
+
+    margin-top: 6px;
+
+    color: #927889;
+
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.analytics-main {
+
+    display: grid;
+
+    grid-template-columns:
+        2fr 1fr;
+
+    gap: 30px;
+
+    margin-top: 35px;
+
+}
+
+
+.progress-card,
+.achievement-card,
+.weekly-card {
+
+    background: #ffffff;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    border: 1px solid #f2e7ec;
+
+    box-shadow:
+        0 15px 35px
+        rgba(120, 80, 100, 0.08);
+
+}
+
+
+/* =========================================
+   CARD TITLES
+========================================= */
+
+.card-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.card-title svg {
+
+    color: #b45b7c;
+
+    font-size: 24px;
+
+}
+
+
+.card-title h2 {
+
+    margin: 0;
+
+    color: #5a3547;
+
+    font-size: 22px;
+
+}
+
+
+/* =========================================
+   TASK / CATEGORY PROGRESS
+========================================= */
+
+.progress-item {
+
+    margin-bottom: 30px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.progress-item:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.progress-item:hover {
+
+    transform: translateX(4px);
+
+}
+
+
+.progress-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+
+    color: #6b3b50;
+
+    font-weight: 600;
+
+}
+
+
+.progress-bar {
+
+    height: 12px;
+
+    width: 100%;
+
+    background: #f4edf1;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+}
+
+
+.progress-fill {
+
+    height: 100%;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #b7dfc5,
+            #d8b4fe
+        );
+
+    transition:
+        width 0.7s ease;
+
+}
+
+
+/* =========================================
+   ACHIEVEMENTS
+========================================= */
+
+.achievement-box {
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff5f8,
+            #faf5ff
+        );
+
+    margin-bottom: 18px;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.achievement-box:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.achievement-box:hover {
+
+    box-shadow:
+        0 10px 25px
+        rgba(120, 80, 100, 0.10);
+
+}
+
+
+.achievement-box h3 {
+
+    margin: 0 0 8px;
+
+    color: #6b3b50;
+
+}
+
+
+.achievement-box p {
+
+    margin: 0;
+
+    color: #927889;
+
+}
+
+
+/* =========================================
+   WEEKLY OVERVIEW
+========================================= */
+
+.weekly-card {
+
+    margin-top: 35px;
+
+}
+
+
+.week-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(120px, 1fr));
+
+    gap: 20px;
+
+}
+
+
+.week-grid div {
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    background: #fff8fb;
+
+    border: 1px solid #f3e5eb;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.week-grid div:hover {
+
+    box-shadow:
+        0 10px 25px
+        rgba(120, 80, 100, 0.10);
+
+}
+
+
+.week-grid h3 {
+
+    margin: 0 0 8px;
+
+    color: #6b3b50;
+
+}
+
+
+.week-grid span {
+
+    color: #927889;
+
+}
+
+
+/* =========================================
+   EMPTY / LOADING STATE
+========================================= */
+
+.analytics-page > h2 {
+
+    color: #5a3547;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+
+.analytics-page > p {
+
+    color: #927889;
+
+    text-align: center;
+
+    padding: 40px;
+
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+.dashboard-container.dark .analytics-page {
+
+    background: #0f172a;
+
+}
+
+
+.dashboard-container.dark
+.analytics-header h1 {
+
+    color: #f8fafc;
+
+}
+
+
+.dashboard-container.dark
+.analytics-header p {
+
+    color: #cbd5e1;
+
+}
+
+
+/* Stat Cards */
+
+.dashboard-container.dark
+.analytics-stat-card {
+
+    background: #1e293b;
+
+    border-color: #334155;
+
+}
+
+
+.dashboard-container.dark
+.analytics-stat-card h2 {
+
+    color: #ffffff;
+
+}
+
+
+.dashboard-container.dark
+.analytics-stat-card p {
+
+    color: #cbd5e1;
+
+}
+
+
+/* Main Cards */
+
+.dashboard-container.dark
+.progress-card,
+
+.dashboard-container.dark
+.achievement-card,
+
+.dashboard-container.dark
+.weekly-card {
+
+    background: #1e293b;
+
+    border-color: #334155;
+
+}
+
+
+.dashboard-container.dark
+.card-title h2 {
+
+    color: #ffffff;
+
+}
+
+
+.dashboard-container.dark
+.card-title svg {
+
+    color: #c4b5fd;
+
+}
+
+
+/* Progress */
+
+.dashboard-container.dark
+.progress-info {
+
+    color: #e2e8f0;
+
+}
+
+
+.dashboard-container.dark
+.progress-bar {
+
+    background: #334155;
+
+}
+
+
+/* Achievements */
+
+.dashboard-container.dark
+.achievement-box {
+
+    background:
+        linear-gradient(
+            135deg,
+            #312e81,
+            #3f2937
+        );
+
+}
+
+
+.dashboard-container.dark
+.achievement-box h3 {
+
+    color: #f8fafc;
+
+}
+
+
+.dashboard-container.dark
+.achievement-box p {
+
+    color: #cbd5e1;
+
+}
+
+
+/* Weekly */
+
+.dashboard-container.dark
+.week-grid div {
+
+    background: #334155;
+
+    border-color: #475569;
+
+}
+
+
+.dashboard-container.dark
+.week-grid h3 {
+
+    color: #ffffff;
+
+}
+
+
+.dashboard-container.dark
+.week-grid span {
+
+    color: #cbd5e1;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .analytics-page {
+
+        padding: 20px;
+
+    }
+
+
+    .analytics-main {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .analytics-header h1 {
+
+        font-size: 28px;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .analytics-page {
+
+        padding: 18px;
+
+    }
+
+
+    .analytics-stats {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .analytics-stat-card {
+
+        padding: 20px;
+
+    }
+
+
+    .analytics-main {
+
+        gap: 20px;
+
+    }
+
+
+    .progress-card,
+    .achievement-card,
+    .weekly-card {
+
+        padding: 22px;
+
+    }
+
+
+    .week-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+
+    }
+
+}
+/* ========================================
+   NO TASKS EMPTY STATE
+======================================== */
+
+.analytics-empty {
+
+    width: 100%;
+
+    min-height: 360px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px 30px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8fb,
+            #f5f0ff
+        );
+
+    border: 1px solid #f2e2eb;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(120, 80, 100, 0.08);
+}
+
+
+.empty-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fce7f3,
+            #ede9fe
+        );
+
+    font-size: 34px;
+
+    margin-bottom: 20px;
+}
+
+
+.analytics-empty h2 {
+
+    margin: 0;
+
+    color: #5a3547;
+
+    font-size: 25px;
+
+    font-weight: 800;
+}
+
+
+.analytics-empty p {
+
+    max-width: 500px;
+
+    margin: 12px 0 8px;
+
+    color: #927889;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+.analytics-empty span {
+
+    margin-top: 8px;
+
+    color: #8b5cf6;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+@media (max-width: 600px) {
+
+    .analytics-empty {
+
+        min-height: 300px;
+
+        padding: 35px 20px;
+
+    }
+
+
+    .analytics-empty h2 {
+
+        font-size: 22px;
+
+    }
+
+}

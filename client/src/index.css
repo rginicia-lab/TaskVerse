@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+
+  /* Cotton Candy Light */
+
+  --bg-color: #FFF7FC;
+  --surface-color: #FFFFFF;
+
+  --primary: #FF8FCF;
+  --secondary: #B8A7FF;
+  --accent: #8FE8FF;
+
+  --text-primary: #2D2A4A;
+  --text-secondary: #6B7280;
+
+  --border-color: rgba(255,255,255,0.6);
+
+  --shadow:
+  0 15px 35px rgba(180,130,200,0.15);
+
+
+  /* Common */
+
+  --radius-lg: 22px;
+  --radius-md: 14px;
+
+  --transition: all 0.3s ease;
+}
+
+
+/* Dark Cotton Candy Night */
+
+[data-theme="dark"] {
+
+  --bg-color: #141329;
+  --surface-color: #211F3A;
+
+  --primary: #FF9ED2;
+  --secondary: #B8B5FF;
+  --accent: #9CEBFF;
+
+  --text-primary: #F8F7FF;
+  --text-secondary: #C5C2D9;
+
+  --border-color:
+  rgba(255,255,255,0.1);
+
+  --shadow:
+  0 15px 40px rgba(0,0,0,0.35);
+}
+
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+body{
+
+  font-family:
+  'Inter',
+  sans-serif;
+
+  background:
+  var(--bg-color);
+
+  color:
+  var(--text-primary);
+
+  transition:
+  var(--transition);
+
+}
+
+
+button{
+
+  font-family:inherit;
+
+  cursor:pointer;
+
+}
+
+
+a{
+
+  text-decoration:none;
+
+  color:inherit;
+
+}
