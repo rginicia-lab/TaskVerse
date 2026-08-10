@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
 
         }
 
-
+        console.log("CREATE TASK BODY:", req.body);
         const task = await Task.create({
 
             title,
@@ -40,7 +40,7 @@ router.post("/", async (req, res) => {
             category,
             reminder,
             dueDate,
-            userId
+            user: userId
 
         });
 
@@ -80,8 +80,8 @@ router.get("/", async (req, res) => {
 
 
         const tasks = await Task.find({
-            userId: userId
-        });
+    user: userId
+});
 
 
         res.json(tasks);
@@ -119,10 +119,9 @@ router.put("/:id", async (req, res) => {
 
 
         const task = await Task.findOne({
-            _id: req.params.id,
-            userId: userId
-        });
-
+    _id: req.params.id,
+    user: userId
+});
 
         if (!task) {
 
@@ -219,13 +218,10 @@ router.delete("/:id", async (req, res) => {
 
 
         const deletedTask =
-            await Task.findOneAndDelete({
-
-                _id: req.params.id,
-
-                userId: userId
-
-            });
+    await Task.findOneAndDelete({
+        _id: req.params.id,
+        user: userId
+    });
 
 
         if (!deletedTask) {
