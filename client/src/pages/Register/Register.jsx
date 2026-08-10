@@ -52,15 +52,15 @@ function Register() {
     };
 
     return (
-        <div className="register-page">
+        <div className="auth-page">
 
-            <div className="register-container">
+            <div className="auth-card">
 
                 <h1>🚀 TaskVerse</h1>
 
-                <p className="subtitle">
-                    Create your account and start organizing your productivity.
-                </p>
+                <p style={{ color: "#666", marginTop: "15px" }}>
+    Create your account and start organizing your productivity.
+</p>
 
                 <form onSubmit={handleRegister}>
 
