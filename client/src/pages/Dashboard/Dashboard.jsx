@@ -95,8 +95,8 @@ function Dashboard() {
 
 
                 const response = await fetch(
-                    `http://localhost:5000/api/tasks?userId=${userId}`
-                );
+    `${import.meta.env.VITE_API_URL}/api/tasks?userId=${userId}`
+);
 
 
                 const data = await response.json();

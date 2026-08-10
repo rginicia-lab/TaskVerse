@@ -80,7 +80,7 @@ function TaskCard({ task, setTasks }) {
             }
 
             const response = await fetch(
-                `http://localhost:5000/api/tasks/${task._id}`,
+                `${import.meta.env.VITE_API_URL}/api/tasks/${task._id}`,
                 {
                     method: "PUT",
 
@@ -146,7 +146,7 @@ function TaskCard({ task, setTasks }) {
             }
 
             const response = await fetch(
-                `http://localhost:5000/api/tasks/${task._id}`,
+                `${import.meta.env.VITE_API_URL}/api/tasks/${task._id}`,
                 {
                     method: "DELETE",
 
@@ -213,7 +213,7 @@ function TaskCard({ task, setTasks }) {
             }
 
             const response = await fetch(
-                `http://localhost:5000/api/tasks/${task._id}`,
+                `${import.meta.env.VITE_API_URL}/api/tasks/${task._id}`,
                 {
                     method: "PUT",
 
@@ -364,7 +364,7 @@ function TaskCard({ task, setTasks }) {
                         className="save-btn"
                         onClick={editTask}
                     >
-                         Save
+                        💾 Save
                     </button>
 
                 </>
@@ -437,7 +437,6 @@ function TaskCard({ task, setTasks }) {
         </motion.div>
 
     );
-
 }
 
 export default TaskCard;

@@ -15,14 +15,17 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
-app.use(express.json());
 
 // Auth routes
 app.use("/api/auth", authRoutes);
-app.use("/api/auth", authRoutes);
+
+// Task routes
 app.use("/api/tasks", taskRoutes);
+
+// Progress routes
 app.use("/api/progress", progressRoutes);
 
+// Health check
 app.get("/", (req, res) => {
   res.send("TaskVerse Backend Running 🚀");
 });
